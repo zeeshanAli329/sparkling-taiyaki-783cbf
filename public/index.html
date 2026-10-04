@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean Scene | We've got your morning covered with coffee</title>
+  <meta name="description" content="Bean Scene serves hand-crafted cappuccinos, chai lattes, macchiatos and espresso made from supreme beans. Order ahead and make your morning." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Bean Scene</a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#top">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="header__actions">
+        <button class="bag-btn" id="bag-open" aria-label="Open your order">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 14H5L4 7h3Zm2 0h6V6a3 3 0 0 0-6 0v1Z"/></svg>
+          <span class="bag-count" id="bag-count">0</span>
+        </button>
+        <a href="#subscribe" class="btn btn--small">Sign Up</a>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero__bg" src="/.netlify/images?url=/img/hero.png&w=1920&fm=webp&q=80" alt="" fetchpriority="high" />
+      <div class="container hero__content">
+        <p class="hero__lead">We've got your morning covered with</p>
+        <h1 class="hero__title">Coffee</h1>
+        <p class="hero__text">It is best to start your day with a cup of coffee. Discover the best flavours coffee you will ever have. We provide the best for our customers.</p>
+        <a href="#menu" class="btn">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Discover -->
+    <section class="discover" id="about">
+      <div class="container discover__inner">
+        <div class="discover__text">
+          <h2 class="title">Discover the best coffee</h2>
+          <p>Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and helps build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no doubt that you will enjoy this coffee more than others you have ever tasted.</p>
+          <a href="#why" class="btn">Learn More</a>
+        </div>
+        <div class="discover__image">
+          <img src="/.netlify/images?url=/img/discover.png&w=720&fm=webp" alt="Latte with heart latte art" loading="lazy" width="560" height="560" />
+        </div>
+      </div>
+      <span class="bean bean--1" aria-hidden="true"></span>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="title">Enjoy a new blend of coffee style</h2>
+          <p>Explore all flavours of coffee with us. There is always a new cup worth experiencing.</p>
+        </div>
+        <div class="menu__grid" id="menu-grid"></div>
+      </div>
+      <span class="bean bean--2" aria-hidden="true"></span>
+    </section>
+
+    <!-- Why -->
+    <section class="why" id="why">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="title">Why are we different?</h2>
+          <p>We don't just make your coffee, we make your day!</p>
+        </div>
+        <div class="why__grid">
+          <article class="why__card">
+            <div class="why__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="24" rx="12" ry="18" transform="rotate(30 24 24)" fill="currentColor"/><path d="M19 10c9 7 1 21 10 28" stroke="#fff9f1" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
+            <h3>Supreme Beans</h3>
+            <p>Beans that provide great taste</p>
+          </article>
+          <article class="why__card">
+            <div class="why__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M24 4l5.6 12.2L43 17.6l-10 9.3 2.7 13.3L24 33.6l-11.7 6.6L15 26.9 5 17.6l13.4-1.4z"/></svg></div>
+            <h3>High Quality</h3>
+            <p>We provide the highest quality</p>
+          </article>
+          <article class="why__card">
+            <div class="why__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M8 18h28v6a14 14 0 0 1-28 0zm28 2h3a5 5 0 0 1 0 10h-4.2l1.1-3H39a2 2 0 0 0 0-4h-3zM6 42h32v3H6z"/><path d="M15 6c-2 3 2 5 0 8M22 4c-2 3 2 6 0 10M29 6c-2 3 2 5 0 8" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+            <h3>Extraordinary</h3>
+            <p>Coffee like you have never tasted</p>
+          </article>
+          <article class="why__card">
+            <div class="why__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M22 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-.6 1.4L19.4 35.4a2 2 0 0 1-2.8 0L4.6 23.4a2 2 0 0 1 0-2.8L20.6 4.6A2 2 0 0 1 22 4zm6 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></div>
+            <h3>Affordable Price</h3>
+            <p>Our coffee prices are easy to afford</p>
+          </article>
+        </div>
+        <div class="why__cta">
+          <p>Great ideas start with great coffee. Let us help you achieve that.</p>
+          <p class="why__cta-strong">Get started today.</p>
+          <a href="#subscribe" class="btn">Join Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container banner__inner">
+        <div class="banner__text">
+          <h2 class="title title--light">Get a chance to have an Amazing morning</h2>
+          <p>We are giving you a one-time opportunity to experience a better life with coffee.</p>
+          <a href="#menu" class="btn btn--dark">Order Now</a>
+        </div>
+        <div class="banner__image">
+          <img src="/.netlify/images?url=/img/banner.png&w=640&fm=webp" alt="Takeaway coffee cup surrounded by flying coffee beans" loading="lazy" width="480" height="480" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="title">Our coffee perfection feedback</h2>
+          <p>Our customers have amazing things to say about us</p>
+        </div>
+        <div class="slider">
+          <button class="slider__arrow slider__arrow--prev" id="fb-prev" aria-label="Previous review">&#8592;</button>
+          <div class="slider__track" id="fb-track">
+            <figure class="quote is-active">
+              <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+              <blockquote>The cappuccino here is the best I've found in the city. Rich, smooth and never bitter. Bean Scene has become my daily ritual before every standup, and the team knows my order before I reach the counter.</blockquote>
+              <figcaption><strong>Jonny Thomas</strong><span>Project Manager</span></figcaption>
+              <span class="quote__avatar" aria-hidden="true">JT</span>
+            </figure>
+            <figure class="quote">
+              <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+              <blockquote>I came for the chai latte and stayed for the atmosphere. Perfectly spiced, beautifully presented, and the staff are always warm. It's the kind of place that makes a Monday morning feel like a weekend.</blockquote>
+              <figcaption><strong>Priya Raman</strong><span>Product Designer</span></figcaption>
+              <span class="quote__avatar" aria-hidden="true">PR</span>
+            </figure>
+            <figure class="quote">
+              <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+              <blockquote>As someone who takes espresso seriously, I'm impressed. The crema is gorgeous and the beans are clearly treated with care. Fair prices for coffee this good. I recommend it to everyone in the office.</blockquote>
+              <figcaption><strong>Marcus Lee</strong><span>Software Engineer</span></figcaption>
+              <span class="quote__avatar" aria-hidden="true">ML</span>
+            </figure>
+          </div>
+          <button class="slider__arrow slider__arrow--next" id="fb-next" aria-label="Next review">&#8594;</button>
+        </div>
+        <div class="slider__dots" id="fb-dots"></div>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe" id="subscribe">
+      <div class="container">
+        <div class="subscribe__box">
+          <h2 class="title title--light">Subscribe to get the Latest News</h2>
+          <p>Don't miss out on our latest news, updates, tips and special offers</p>
+          <form class="subscribe__form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="newsletter-form">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+            <label class="sr-only" for="nl-email">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="Enter your mail" required />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p class="form-status" id="newsletter-status" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="logo">Bean Scene</a>
+        <p>Hand-crafted coffee from carefully sourced beans, roasted in small batches and served with a smile. Your morning, covered.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.8 3h3.3l-7.2 8.2L22.4 21h-6.6l-5.2-6.8L4.7 21H1.4l7.7-8.8L1 3h6.8l4.7 6.2zm-1.2 16h1.8L7.5 4.9H5.6z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>About</h4>
+        <a href="#menu">Menu</a>
+        <a href="#why">Features</a>
+        <a href="#subscribe">News &amp; Blogs</a>
+        <a href="#contact">Help &amp; Supports</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#about">How we work</a>
+        <a href="#">Terms of service</a>
+        <a href="#menu">Pricing</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <address>Akshya Nagar 1st Block 1st Cross, Rammurthy Nagar, Bangalore-560016</address>
+        <a href="tel:+12029182132">+1 202-918-2132</a>
+        <a href="mailto:beanscene@mail.com">beanscene@mail.com</a>
+        <a href="#top">www.beanscene.com</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">&copy; <span id="year"></span> Bean Scene. All rights reserved.</div>
+  </footer>
+
+  <!-- Order drawer -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Your order" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Your Order</h3>
+      <button class="drawer__close" id="bag-close" aria-label="Close order">&times;</button>
+    </div>
+    <ul class="drawer__items" id="bag-items"></ul>
+    <p class="drawer__empty" id="bag-empty">Your bag is empty. Pick a coffee from the menu to get started.</p>
+    <div class="drawer__total"><span>Total</span><strong id="bag-total">$0.00</strong></div>
+    <form class="order-form" name="order" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="order-form">
+      <input type="hidden" name="form-name" value="order" />
+      <input type="hidden" name="items" id="order-items" />
+      <input type="hidden" name="total" id="order-total" />
+      <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <label>Name<input type="text" name="name" required /></label>
+      <label>Phone<input type="tel" name="phone" required /></label>
+      <label>Pickup time
+        <select name="pickup" required>
+          <option value="ASAP">As soon as possible</option>
+          <option value="15 min">In 15 minutes</option>
+          <option value="30 min">In 30 minutes</option>
+          <option value="1 hour">In 1 hour</option>
+        </select>
+      </label>
+      <button type="submit" class="btn btn--block" id="order-submit" disabled>Place Pickup Order</button>
+      <p class="form-status" id="order-status" role="status"></p>
+    </form>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
